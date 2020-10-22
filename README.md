@@ -6,6 +6,7 @@ Tic Tac Toe test-bed to test out your AI players!
 Allows for 2 Human Players to play together or vs some provided AI Brains.
 
 ## Running the Program ##
+For player vs computer, computer goes first (O) and player goes second (X):
 
 > python tictactoe.py
 
@@ -16,6 +17,7 @@ For player vs player:
 To start first (be O instead of X):
 
 > python tictactoe.py --start_first
+
 
 
 Requires numpy, argparse.
