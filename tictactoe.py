@@ -21,9 +21,7 @@ def check_and_apply(ttt, value, grid_x, grid_y):
         ttt.set_cross(grid_x, grid_y)
     else:
         print(f"Unknown value {value}, select from 0 or 1")
-    
-
-
+   
 
 
 # Tests
@@ -45,8 +43,6 @@ def check_win(test_arr, winner):
 # Blank: [[-3,-3,-3],[-3,-3,-3],[-3,-3,-3]]
 check_stack(0)
 check_stack(1)
-
-
 
 tick_tock = 0
 
@@ -80,13 +76,9 @@ if __name__ == "__main__":
             
             if AGAINST_COMPUTER and tick_tock == COMPUTER_VALUE:
                 print("Thinking...")
-                # Logic to Play
-                #grid = random.randint(1,9) # Random logic
+                
                 ttt = brain.play(ttt)
-                # print("Next: \n",ttt)
-                # _x,_y = extract_grid(grid)
-                # print(f"Computer chose: {grid}")
-                # check_and_apply(ttt, tick_tock, _x, _y)
+                
             else: 
                 ttt.as_flat_list()
                 print(f"\nSelect {tick_tock}: ")
