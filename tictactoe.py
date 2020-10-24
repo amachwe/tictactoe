@@ -62,6 +62,8 @@ if __name__ == "__main__":
         COMPUTER_VALUE = 1
 
     ttt = TicTacToe()
+
+    # Replace with your own AI brain    
     brain = ttt_brain.PatternBrain(computer_value=COMPUTER_VALUE)
 
     print("Welcome to Tic Tac Toe, q to quit at any time.")
@@ -77,6 +79,7 @@ if __name__ == "__main__":
             if AGAINST_COMPUTER and tick_tock == COMPUTER_VALUE:
                 print("Thinking...")
                 
+                # Hook into the 'brain'
                 ttt = brain.play(ttt)
                 
             else: 
